@@ -23,6 +23,6 @@
     "tailwindcss": "^3.4.1",
     "vite": "^5.1.0"
   },
-  "author": "Diana Trujillo <https://github.com/DianaTrujillo>",
+  "author": "Diana Trujillo <https://github.com/Diani39ec>",
   "description": "Plataforma de comercio electrónico con catálogo de productos, carrito de compras y checkout."
 }

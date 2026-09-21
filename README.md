@@ -31,7 +31,7 @@ Este proyecto ha sido optimizado y estructurado bajo estándares profesionales d
 
 1. **Clonar el repositorio**:
    ```bash
-   git clone https://github.com/DianaTrujillo/ecommerce.git
+   git clone https://github.com/Diani39ec/ecommerce.git
    cd ecommerce
    ```
 
@@ -51,7 +51,7 @@ Este proyecto ha sido optimizado y estructurado bajo estándares profesionales d
 
 **Diana Trujillo**  
 - 💼 Desarrolladora de Software
-- 🌐 GitHub: [Diana Trujillo](https://github.com/DianaTrujillo)
+- 🌐 GitHub: [Diani39ec](https://github.com/Diani39ec)
 
 ---
 
