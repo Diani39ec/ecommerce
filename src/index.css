@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  color: #111827;
+  background-color: #FFFFFF;
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-emerald-600 text-white px-6 py-3 rounded-lg font-semibold 
+           hover:bg-emerald-700 active:bg-emerald-800 
+           transition-all duration-200 ease-in-out
+           focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2
+           disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .btn-secondary {
+    @apply bg-white text-emerald-600 px-6 py-3 rounded-lg font-semibold 
+           border-2 border-emerald-600
+           hover:bg-emerald-50 active:bg-emerald-100
+           transition-all duration-200 ease-in-out
+           focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2;
+  }
+
+  .btn-ghost {
+    @apply text-gray-600 px-4 py-2 rounded-lg font-medium
+           hover:bg-gray-100 active:bg-gray-200
+           transition-all duration-200 ease-in-out
+           focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2;
+  }
+
+  .card {
+    @apply bg-white rounded-xl shadow-sm border border-gray-100
+           hover:shadow-md transition-shadow duration-300;
+  }
+
+  .input-field {
+    @apply w-full px-4 py-3 rounded-lg border border-gray-300 
+           focus:border-emerald-500 focus:ring-2 focus:ring-emerald-200
+           transition-all duration-200 outline-none
+           text-gray-900 placeholder-gray-400;
+  }
+
+  .badge {
+    @apply inline-flex items-center justify-center
+           min-w-[20px] h-5 px-1.5 text-xs font-bold
+           bg-emerald-600 text-white rounded-full;
+  }
+
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.toast-enter {
+  animation: toastIn 0.3s ease-out;
+}
+
+.toast-exit {
+  animation: toastOut 0.3s ease-in forwards;
+}
+
+@keyframes toastIn {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes toastOut {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+}
+
+.product-image-zoom {
+  overflow: hidden;
+}
+
+.product-image-zoom img {
+  transition: transform 0.5s ease;
+}
+
+.product-image-zoom:hover img {
+  transform: scale(1.08);
+}
