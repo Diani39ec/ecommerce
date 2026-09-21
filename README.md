@@ -1,60 +1,58 @@
-# E-Commerce Storefront - Tienda Online Moderna
+# E-Commerce Storefront — Tienda Online Moderna
 
-![Desarrollado por Diana Trujillo](https://img.shields.io/badge/Desarrollador-Diana%20Trujillo-6366f1?style=for-the-badge&logo=github)
-![Estado](https://img.shields.io/badge/Estado-Completado%20%2F%20Profesional-10b981?style=for-the-badge)
+![Desarrollado por Diana Trujillo](https://img.shields.io/badge/Autora-Diana%20Trujillo-6366f1?style=for-the-badge&logo=github)
+![Estado](https://img.shields.io/badge/Estado-Profesional-10b981?style=for-the-badge)
 ![Licencia](https://img.shields.io/badge/Licencia-MIT-3b82f6?style=for-the-badge)
 
-## 📌 Descripción
+## Descripción
 
-Plataforma de comercio electrónico con catálogo de productos, carrito de compras y checkout.
+Plataforma de comercio electrónico en **React 18 + Vite**: catálogo de productos, carrito de compras con contexto global, checkout y animaciones con Framer Motion. Lista para conectar pasarela de pago (Stripe) vía variables de entorno.
 
-Este proyecto ha sido optimizado y estructurado bajo estándares profesionales de diseño y código por **Diana Trujillo**.
+## Demo
 
----
+- Repositorio: <https://github.com/Diani39ec/ecommerce>
+- Demo local (Laragon): `http://ecommerce.test`
+- Demo dev: `npm run dev` → `http://localhost:5173`
 
-## 🚀 Tecnologías Utilizadas
+## Características
 
-`React` `Vite` `Tailwind CSS` `JavaScript`
+- Catálogo con datos locales y filtros
+- Carrito persistente (contexto React)
+- Flujo de checkout
+- Animaciones fluidas y diseño responsivo
 
----
+## Tecnologías
 
-## ✨ Características Principales
+`React 18` `Vite` `React Router` `Framer Motion` `lucide-react` `JavaScript` `CSS3`
 
-- 🎨 **Diseño Moderno e Interactivo**: Interfaz responsiva adaptada a dispositivos móviles y de escritorio.
-- ⚡ **Alto Rendimiento**: Estructura optimizada para tiempos de carga veloces.
-- 🔒 **Código Limpio y Mantenible**: Estructura organizada siguiendo buenas prácticas de desarrollo.
-- 🌐 **Listo para Despliegue**: Configuración lista para entornos de producción o hosting en Laragon / Vercel / Netlify.
+## Instalación
 
----
+```bash
+git clone https://github.com/Diani39ec/ecommerce.git
+cd ecommerce
+npm install
+npm run dev      # servidor de desarrollo
+npm run build    # build de producción (genera dist/)
+npm run preview  # previsualizar el build
+```
 
-## 🛠️ Instalación y Uso Local
+## Variables de entorno
 
-1. **Clonar el repositorio**:
-   ```bash
-   git clone https://github.com/Diani39ec/ecommerce.git
-   cd ecommerce
-   ```
+Copia `.env.example` a `.env`. La clave de Stripe incluida es un placeholder de prueba.
 
-2. **Ver en servidor local (Laragon / Apache)**:
-   - Copia la carpeta del proyecto a tu directorio `www` en Laragon (`C:\laragon\www\ecommerce`).
-   - Abre `http://ecommerce.test` en tu navegador.
+| Variable | Descripción | Ejemplo |
+|---|---|---|
+| `VITE_API_URL` | URL base de API del backend | `/api` |
+| `VITE_STRIPE_KEY` | Clave pública de Stripe | `pk_test_tu_clave_aquí` |
+| `VITE_STORE_NAME` | Nombre de la tienda | `GreenMart` |
 
-3. **Para proyectos Node / React / Vue** (si aplica):
-   ```bash
-   npm install
-   npm run dev
-   ```
+> Seguridad: sin secretos hardcodeados; usa solo la clave **pública** (`pk_*`) en el frontend. La clave secreta (`sk_*`) debe vivir exclusivamente en el backend y nunca se sube al repo.
 
----
+## Autora
 
-## 👤 Autora
+**Diana Trujillo © 2026**
+Desarrolladora de Software — GitHub: [Diani39ec](https://github.com/Diani39ec)
 
-**Diana Trujillo**  
-- 💼 Desarrolladora de Software
-- 🌐 GitHub: [Diani39ec](https://github.com/Diani39ec)
+## Licencia
 
----
-
-## 📄 Licencia
-
-Este proyecto está bajo la Licencia MIT. Consulta el archivo `LICENSE` para más detalles.
+MIT. Consulta el archivo `LICENSE` para más detalles.
