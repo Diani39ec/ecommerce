@@ -56,3 +56,14 @@ Desarrolladora de Software — GitHub: [Diani39ec](https://github.com/Diani39ec)
 ## Licencia
 
 MIT. Consulta el archivo `LICENSE` para más detalles.
+
+## Estructura del proyecto
+```
+ecommerce-react/
+├── index.html · vite.config.js · tailwind.config.js · netlify.toml (deploy)
+├── src/main.jsx · src/App.jsx
+├── src/components/ (Navbar, Hero, ProductGrid, ProductCard, ProductDetail, Cart, Checkout, SearchBar, Toast, Footer)
+├── src/context/ (CartContext, AuthContext) · src/data/products.js
+└── src/utils/ (formatCurrency, security)
+```
+Stack: React + Vite + React Router + Tailwind + Framer Motion.
